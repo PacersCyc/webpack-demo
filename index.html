@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>模块化demo</title>
+
+	<link href="http://at.alicdn.com/t/font_eqnpxqut37l4ygb9.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div id="nav">
+    <div class="layout clearfix">
+      <a href="http://www.dota2.com.cn/" class="nav-logo" target="_blank" >dota2首页</a>
+      <ul>
+        <li>
+          <a href="#">
+            <span class="nav-c">首页</span>
+            <span class="nav-e">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="nav-c">资讯</span>
+            <span class="nav-e">NEWS</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="nav-c">赛事</span>
+            <span class="nav-e">MATCH</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="nav-c">互动</span>
+            <span class="nav-e">INTERACTION</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="nav-c">资料</span>
+            <span class="nav-e">DATA</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="nav-c">服务</span>
+            <span class="nav-e">SEVICE</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="nav-c">下载</span>
+            <span class="nav-e">DOWN</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--全屏轮播-->
+  <div id="header">
+  	<div class="carousel">
+  		<ul class="img-ct clearfix">
+  			<li class="item">
+  				<div class="bg" data-imgSrc="http://www.dota2.com.cn/resources/jpg/131008/10251381216312211.jpg"></div>
+  				<div class="main-title">
+  					<div class="welcome">Welcome To DOTA2</div>
+      				<div class="fight">Never Give Up Fighting!</div>
+      				<a href="#">JOIN US NOW</a>
+  				</div>
+  			</li>
+  			<li class="item">
+  				<div class="bg" data-imgSrc="http://www.dota2.com.cn/resources/jpg/131008/10251381215866972.jpg"></div>
+  				<div class="main-title">
+  					<div class="welcome">Welcome To DOTA2</div>
+      				<div class="fight">Never Give Up Fighting!</div>
+      				<a href="#">JOIN US NOW</a>
+  				</div>
+  			</li>
+  			<li class="item">
+  				<div class="bg" data-imgSrc="http://www.dota2.com.cn/resources/jpg/131008/10251381215274017.jpg"></div>
+  				<div class="main-title">
+  					<div class="welcome">Welcome To DOTA2</div>
+      				<div class="fight">Never Give Up Fighting!</div>
+      				<a href="#">JOIN US NOW</a>
+  				</div>
+  			</li>
+  			<li class="item">
+  				<div class="bg" data-imgSrc="http://www.dota2.com.cn/resources/jpg/131008/10251381215340666.jpg"></div>
+  				<div class="main-title">
+  					<div class="welcome">Welcome To DOTA2</div>
+      				<div class="fight">Never Give Up Fighting!</div>
+      				<a href="#">JOIN US NOW</a>
+  				</div>
+  			</li>
+  			<li class="item">
+  				<div class="bg" data-imgSrc="http://www.dota2.com.cn/resources/jpg/131008/10251381214949936.jpg"></div>
+  				<div class="main-title">
+  					<div class="welcome">Welcome To DOTA2</div>
+      				<div class="fight">Never Give Up Fighting!</div>
+      				<a href="#">JOIN US NOW</a>
+  				</div>
+  			</li>
+  		</ul>
+  		<a class="prev button"><</a>
+  		<a class="next button">></a>
+  		<ul class="bullets">
+  			<li class="active"></li>
+  			<li></li>
+  			<li></li>
+  			<li></li>
+  			<li></li>
+  		</ul>
+  	</div>
+  </div>
+
+
+  <!--新闻懒加载-->
+  <div id="news">
+  	<div class="layout">
+  		<h2>新闻资讯</h2>
+  		<div class="news-content">
+  			<ul class="news-ct clearfix">
+  				<!--用于计算item宽度和列数，但不展示-->
+  				<li class="item hide"></li>
+  			</ul>
+  			<a class="loadmore">加载更多</a>
+  		</div>
+  	</div>
+  </div>
+
+
+
+  <div id="match">
+    <div class="layout">
+      <h2>2017年官方主要赛事</h2>
+      <ul class="match-list">
+        <li>    
+          <img src="http://img.dota2.com.cn/maps/67/43/6743263f9cb295a9947770e5fce46aa51498621178.jpg" alt="ti7">
+          <h5>2017国际邀请赛</h5>
+          <p>举办地点：美国西雅图</p>
+          <p>总奖金池：待定</p>
+          <p>冠军队伍：待定</p>
+        </li>
+        <li>          
+          <img src="http://img.dota2.com.cn/maps/34/cb/34cbf170eccc5d482f99b06584d2158c1493014398.jpg" alt="kiev">
+          <h5>基辅特级锦标赛</h5>
+          <p>举办地点：乌克兰基辅</p>
+          <p>总奖金池：300万美元</p>
+          <p>冠军队伍：OG</p>
+        </li>
+        <li>          
+          <img src="http://img.dota2.com.cn/maps/08/af/08af09e6092da6f25db95df5c89514231493013648.jpg" alt="asia">
+          <h5>亚洲邀请赛</h5>
+          <p>举办地点：中国上海</p>
+          <p>总奖金池：62万美元</p>
+          <p>冠军队伍：iG</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="teams">
+    <div class="layout">
+      <h2>职业战队</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="http://img.dota2.com.cn/maps/00/95/00959f7052c3f4dda2503e5ce40c0afc1476427357.png" alt="">
+            <span class="cover">
+              <i class="iconfont icon-dotadf111gh"></i>
+            </span>
+          </a>
+          <p>OG</p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://img.dota2.com.cn/maps/a8/fa/a8fa8d5399c37ea93ecdcc1811b202061476427317.png" alt="">
+            <span class="cover">
+              <i class="iconfont icon-dotadf111gh"></i>
+          </a>
+          <p>EG</p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://img.dota2.com.cn/maps/39/ab/39ab1354a3a400de6a446ac6adfe72f21497242439.png" alt="">
+            <span class="cover">
+              <i class="iconfont icon-dotadf111gh"></i>
+          </a>
+          <p>VP</p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://img.dota2.com.cn/maps/04/c6/04c6479ddd13b9c01a8f33dcb6e6308c1477888362.png" alt="">
+            <span class="cover">
+              <i class="iconfont icon-dotadf111gh"></i>
+          </a>
+          <p>Liquid</p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://img.dota2.com.cn/maps/8a/de/8ade1974f431e43815ac13ded6d13b021476424568.png" alt="">
+            <span class="cover">
+              <i class="iconfont icon-dotadf111gh"></i>
+          </a>
+          <p>Newbee</p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://img.dota2.com.cn/maps/b0/be/b0be43eaffc6c27076f8b536dfdb78471476178758.png" alt="">
+            <span class="cover">
+              <i class="iconfont icon-dotadf111gh"></i>
+          </a>
+          <p>iG</p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://img.dota2.com.cn/maps/6d/67/6d67a0e7aa6cb21543f4829fa8c191c21476006054.png" alt="">
+            <span class="cover">
+              <i class="iconfont icon-dotadf111gh"></i>
+          </a>
+          <p>LGD</p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://img.dota2.com.cn/maps/0f/b1/0fb13f50e173294a00fa0d4512f9cbb41476427283.png" alt="">
+            <span class="cover">
+              <i class="iconfont icon-dotadf111gh"></i>
+          </a>
+          <p>Secret</p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://img.dota2.com.cn/maps/44/4e/444e65a54b192537a42debe6f679a4261497242657.png" alt="">
+            <span class="cover">
+              <i class="iconfont icon-dotadf111gh"></i>
+          </a>
+          <p>NP</p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="http://img.dota2.com.cn/maps/96/45/9645c4297cf3b5a3f620d7aa871b92df1477895117.png" alt="">
+            <span class="cover">
+              <i class="iconfont icon-dotadf111gh"></i>
+          </a>
+          <p>TNC</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="heroes">
+    <div class="layout">
+      <h2>英雄基本介绍</h2>
+      <ul>
+        <li class="clearfix">
+          <div class="hero-instr-l">
+            <h3>噬魂鬼：1号位</h3>
+            <p>4个技能制造的输出环境使小狗成为力量英雄中无可挑剔的carry人选。在德瓦克地下城中，关押着一个一心想要复仇的巫师，他正在密谋着如何逃跑。和他被关在同一间牢房的，是一个口齿不清的生物，一个名叫奈克斯的贼，它被邪恶议会施加了长命百岁的诅咒，这样才有足够的时间来尽可能多的惩罚它的偷窃和欺骗的行径。</p>
+          </div>
+          <div class="hero-image">
+            <img src="http://www.dota2.com.cn/images/heroes/life_stealer_vert.jpg" alt="">           
+          </div>
+          <img src="http://cdn.dota2.com.cn/apps/dota2/images/international2017/battlepass/immortals/a_lifestealer.png?v=3946141" class="img-r" alt="">
+        </li>
+        <li class="clearfix">
+          <div class="hero-instr-r">
+            <h3>狙击手：2号位</h3>
+            <p>超长的攻击距离意味着相比他人更安全的输出环境，这一点上没有人比火枪更优秀。卡德尔鹰眼出生在诺伦山脉的山谷中，这里的住民从太古以来就靠猎杀居住在村庄上方悬崖上的一种奇怪生物为生，他们从远距离杀死这种叫峭壁潜行兽的生物，然后收集他们掉下来的尸体。鹰眼是这些怪异住民中其中最棒的射手之一</p>
+          </div>
+          <div class="hero-image">
+            <img src="http://www.dota2.com.cn/images/heroes/sniper_vert.jpg" alt="">
+          </div>
+          <img src="http://cdn.dota2.com.cn/apps/dota2/images/international2017/battlepass/immortals/a_sniper.png?v=3946141" class="img-l" alt="">
+        </li>
+        <li class="clearfix">
+          <div class="hero-instr-l">
+            <h3>育母蜘蛛：3号位</h3>
+            <p>劣势路最强线霸，等级起来后，线上来四个人也未必留得住蜘蛛。育母蜘蛛布雷克艾拉齐娜一直潜伏在灼神山的火山口岩洞中，悉心的照料着数以百万计的幼虫，保证他们能够安全的存活到去地上世界捕食的年龄。直到后来，索罗普瑟斯，一个贪婪的权臣，在死火山的火山口修建了他的私人庙塔，因为他知道，就算有人觊觎他的财富，也不能活着穿越那条蜘蛛出没的死亡之路。</p>
+          </div>
+          <div class="hero-image">
+            <img src="http://www.dota2.com.cn/images/heroes/broodmother_vert.jpg" alt="">
+          </div>
+          <img src="http://cdn.dota2.com.cn/apps/dota2/images/international2017/battlepass/immortals/a_broodmother.png?v=3946141" class="img-r" alt="">
+        </li>
+        <li class="clearfix">
+          <div class="hero-instr-r">
+            <h3>齐天大圣：4号位</h3>
+            <p>机动灵活性不输全球流，先手爆发输出身兼数职，优秀的大招预判更能逆天改命。他被一座大山压的动弹不得，露在外面的只有头颅。这座石头打造的监牢是由古神降下，为的是镇压他不成熟的暴乱。苔藓开始顺着他脸上的纹路生长，青草从他耳朵里萌发；慢慢地，他的双眼只能看到脸颊旁的土壤里长出的野花。大多数人都以为，与天庭诸神决战后他已不堪凌虐而消亡，流传的只有他的传说。</p>
+          </div>
+          <div class="hero-image">
+            <img src="http://www.dota2.com.cn/images/heroes/monkey_king_vert.jpg" alt="">
+          </div>
+          <img src="http://cdn.dota2.com.cn/apps/dota2/images/international2017/battlepass/immortals/a_monkeyking.png?v=3946141" class="img-l" alt="">
+        </li>
+        <li class="clearfix">
+          <div class="hero-instr-l">
+            <h3>水晶室女：5号位</h3>
+            <p>脆弱的身板却搭配着一身优秀的技能，这也正是所有法师英雄的硬伤，好在冰女的核心技能是光环，是她身为5号位的最大优势。出生在一个气候温和的地区，与性子火爆的姐姐莉娜一起长大，她很快就发现她天生对冰元素的吸引力给周围所有人制造了麻烦。</p>
+          </div>
+          <div class="hero-image">
+            <img src="http://www.dota2.com.cn/images/heroes/crystal_maiden_vert.jpg" alt="">
+          </div>
+          <img src="http://cdn.dota2.com.cn/apps/dota2/images/international2017/battlepass/immortals/a_crystalmaiden.png?v=3946141" class="img-r" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="team">
+    <div class="layout">
+      <h2>创作团队</h2>
+      <ul>
+        <li>
+          <div class="img-w img1"></div>
+          <h3>点金手</h3>
+          <ul>
+            <li><a href="">
+              <i class="iconfont icon-zliconweibo01"></i>
+            </a></li>
+            <li><a href="">
+              <i class="iconfont icon-qq"></i>
+            </a></li>
+            <li><a href="">
+              <i class="iconfont icon-weixin"></i>
+            </a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="img-w img2"></div>
+          <h3>刃甲</h3>
+          <ul>
+            <li><a href="">
+              <i class="iconfont icon-zliconweibo01"></i>
+            </a></li>
+            <li><a href="">
+              <i class="iconfont icon-qq"></i>
+            </a></li>
+            <li><a href="">
+              <i class="iconfont icon-weixin"></i>
+            </a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="img-w img3"></div>
+          <h3>黑皇杖</h3>
+          <ul>
+            <li><a href="">
+              <i class="iconfont icon-zliconweibo01"></i>
+            </a></li>
+            <li><a href="">
+              <i class="iconfont icon-qq"></i>
+            </a></li>
+            <li><a href="">
+              <i class="iconfont icon-weixin"></i>
+            </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="layout">
+      <h2>联系我们</h2>
+      <form action="#" method="post" class="clearfix">
+        <div>
+          <input type="text" name="name" placeholder="您的姓名">
+          <input type="text" name="email" placeholder="您的邮箱">
+          <input type="text" name="phone" placeholder="您的电话">
+        </div>
+        <div>
+          <textarea name="message" id="message" cols="30" rows="12" placeholder="您想说点什么"></textarea>
+        </div>
+        <div class="button-w">
+          <input type="submit" value="提交" class="button">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="layout">
+      <ul>
+        <li>
+          <p>Copyright © Winters 2017</p>
+        </li>
+        <li>
+          <ul>
+            <li><a href="" class="icon">
+              <i class="iconfont icon-zliconweibo01"></i>
+            </a></li>
+            <li><a href="" class="icon">
+              <i class="iconfont icon-qq"></i>
+            </a></li>
+            <li><a href="" class="icon">
+              <i class="iconfont icon-weixin"></i>
+            </a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="text/javascript"  src="./dist/merge.js"></script>
+</body>
+</html>
